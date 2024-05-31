@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/course.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Курс валют</title>
+</head>
+<body>
+    
+    <header class="header">
+        <div>
+            <a href="#">
+                <img src="images/logo-russia.png" alt="Логотип">
+            </a>
+        </div>
+        <div class="menu">
+            <div class="burger" id="burger">
+                <img src="images/free-icon-burger-bar-5358649.png" alt="Бутерброд">
+            </div>
+            <ul id="menu">
+                <li class="menu-item">
+                    <a href="news.html">Новости</a>
+                </li>
+                <li class="menu-item">
+                    <a href="index.html">О компании</a>
+                </li>
+                <li class="menu-item">
+                    <a href="contacts.html">Контактные данные</a>
+                </li>
+                <li class="menu-item">
+                    <a href="movie.html">Видео</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <section class="main">
+        <div class="converter">
+                <div class="converter-block">
+                    <h2>Конвертер валюты из рубля в Фунт стерлингов Соединенного королевства и обратно</h2>
+                    <div class="coverter-inputs-to">
+                        <input type="number" class="converter-input" placeholder="Рубли" id="input-from-ruble">
+                        <input type="number" class="converter-input" placeholder="Фунт стерлингов Соединенного королевства" id="input-to-funt" disabled>
+                        <input class="converter-input button"  type="button" id="button-to" value="Конвертировать">
+                    </div>
+                   <div class="converter-inputs-from">
+                        <input type="number" class="converter-input" placeholder="Фунт стерлингов Соединенного королевства" id="input-from-funt">
+                        <input type="number" class="converter-input" placeholder="Рубли" id="input-to-ruble" disabled>
+                        <input class="converter-input button"  type="button" id="button-from" value="Конвертировать">
+                   </div>
+                </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        © 2024 - Петраков Михаил Вячеславович
+    </footer>
+
+    <script src="https://www.cbr-xml-daily.ru/money.js"></script>
+    <script src="scripts/course.js"></script>
+    <script src="scripts/script.js"></script>
+</body>
+</html>
